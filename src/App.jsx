@@ -62,7 +62,7 @@ export default function Board() {
 //^ above was changed about three times from adding in <Square />
 //to <Square value={squares[#]} />
 //the basic code was just adding values to the squares <Square value="1" />
-
+//before that there was just the Square JSX syntax of <Square />
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
