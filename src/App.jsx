@@ -7,11 +7,11 @@ function Square({value, onSquareClick}) {
     </button>
   );
 }
-
 export default function Board() {
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
 
+  //this is to update the squares array holding my board's state
   function handleClick(i) {
     if (calculateWinner(squares) || squares[i]) {
       return;
