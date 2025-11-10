@@ -61,6 +61,7 @@ export default function Board() {
 //this is how each click would correspond to a certain square
 //^ above was changed about three times from adding in <Square />
 //to <Square value={squares[#]} />
+//the basic code was just adding values to the squares <Square value="1" />
 
 function calculateWinner(squares) {
   const lines = [
