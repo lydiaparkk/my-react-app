@@ -8,6 +8,24 @@ function Square({value, onSquareClick}) {
     </button>
   );
 }
+
+function Board() {
+
+}
+
+export default function Game() {
+  return (
+    <div className="game">
+      <div className="game-board">
+        <Board />
+      </div>
+      <div className="game-info">
+        <ol>{/*TODO*/}</ol>
+      </div>
+    </div>
+  );
+}
+
 //there was a function handleClick() here so 
 //when you clicked on a square the log would say "clicked" in the console
 export default function Board() {
