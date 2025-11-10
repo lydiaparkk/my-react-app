@@ -22,7 +22,7 @@ export default function Board() {
     } else {
       nextSquares[i] = 'O';
     }
-    
+
     setSquares(nextSquares);
     setXIsNext(!xIsNext);
   }
@@ -34,7 +34,6 @@ export default function Board() {
   } else {
     status = 'Next player: ' + (xIsNext ? 'X' : 'O');
   }
-
   return (
     <>
       <div className="status">{status}</div>
@@ -56,6 +55,7 @@ export default function Board() {
     </>
   );
 }
+//this is how each click would correspond to a certain square
 
 function calculateWinner(squares) {
   const lines = [
@@ -76,3 +76,4 @@ function calculateWinner(squares) {
   }
   return null;
 }
+//adding time travel
