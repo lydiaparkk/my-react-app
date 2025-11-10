@@ -7,6 +7,8 @@ function Square({value, onSquareClick}) {
     </button>
   );
 }
+//there was a function handleClick() here so 
+//when you clicked on a square the log would say "clicked" in the console
 export default function Board() {
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
